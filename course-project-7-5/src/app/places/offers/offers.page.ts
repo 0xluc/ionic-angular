@@ -6,10 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offers.page.scss'],
 })
 export class OffersPage implements OnInit {
+  offers = [
+    {
+      id: '1',
+      title: 'Offer 1',
+      imageUrl: 'https://picsum.photos/200',
+    },
+    {
+      id: '2',
+      title: 'Offer 2',
+      imageUrl: 'https://picsum.photos/200',
+    },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
+  onEdit(offerId: string) {
+    console.log('Editing item', offerId);
   }
-
 }
